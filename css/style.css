@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+	background-color: #ffffff;
+}
+
+#background{
+	background-color:#000000;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0.4;
+	z-index:-5;
+	visibility:visible;
+	overflow:hidden;
+}
+
+#container{
+	width:1000px;
+}
+
+#header{
+	width:1000px;
+	
+	}
+
+#suli{
+	width:260px;
+	height:128px;
+	
+}
+
+#suli p{
+	color:#0395d0;
+	
+}
+
+#menu{
+	
+}
+
+.menuitem{
+	
+}
+
+.menuitem a{
+	
+}
+
+.menuitem a:hover{
+	
+}
+.menuitem a.activemenu{
+	
+}
+
+.main{
+	width:980px;
+
+}
+
+#content{
+	width:826px;
+
+}
+
+#footer{
+	width: 980px;
+
+}
+
+.doboz{
+	width:190px;
+
+}
