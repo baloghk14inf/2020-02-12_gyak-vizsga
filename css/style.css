@@ -2,6 +2,7 @@
 
 body {
 	background-color: #ffffff;
+	
 }
 
 #background{
@@ -19,38 +20,65 @@ body {
 
 #container{
 	width:1000px;
+	margin: 0 auto;
 }
 
 #header{
 	width:1000px;
+	background-image: url("/images/suli.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 2px solid #E98300;
+	border-radius: 8px 5px;
+	margin: 20px;
+	height: 120px;
 	
+
 	}
 
 #suli{
 	width:260px;
 	height:128px;
 	
+
+	
+	
+	
 }
 
-#suli p{
+#suli  p {
 	color:#0395d0;
+	text-align: center;
+	text-justify: inherit;
+	font-size: 25px;
 	
 }
 
 #menu{
-	
+	margin-left: 40px;
 }
 
 .menuitem{
+	display: inline;
 	
 }
 
 .menuitem a{
-	
+	color:  white;
+	text-decoration: none;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 5px;
+	background-image: url("/images/menu-blue.gif");
+	border: 2px solid #E98300;
+	border-radius: 8px 5px;
+
 }
 
 .menuitem a:hover{
 	
+	background-image: url("/images/menu-lime.gif")
 }
 .menuitem a.activemenu{
 	
@@ -68,10 +96,26 @@ body {
 
 #footer{
 	width: 980px;
+	background-color: white;
+	border: 2px solid #E98300;
+	border-radius: 8px 5px;
+	margin: 0 auto;
+	margin: 20px;
+	padding: 10px;
 
 }
 
 .doboz{
-	width:190px;
+	
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+
+}
+
+.keret{
+	border: 2px solid #E98300;
+	border-radius: 8px 5px;
 
 }

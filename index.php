@@ -12,19 +12,19 @@
 	
 <body>
 <div id="background"></div>
-<div id="container">
+<div id="container" align="center">
 	<div id="header">
-		<div id="suli"><p>Apáczai Szakgimnázium és&nbsp;Kollégium<br>Dombóvár</p></div>
+		<div id="suli" ><p>Apáczai Szakgimnázium és&nbsp;Kollégium<br>Dombóvár</p></div>
 		<div style="clear:both;"></div>
 		&nbsp;
 	</div>
 	<div style="clear:both;"></div>
 	<div id="menu">
-		<div class="menuitem"><a href="">Iskolánkról</a></div>
-		<div class="menuitem"><a href="">Beiskolázás</a></div>
-		<div class="menuitem"><a href="">Képzés, vizsgák</a></div>
-		<div class="menuitem"><a href="">Dokumentumtár</a></div>
-		<div class="menuitem"><a href="">Projektek</a></div>
+		<div class="menuitem "><a href="">Iskolánkról</a></div>
+		<div class="menuitem "><a href="">Beiskolázás</a></div>
+		<div class="menuitem "><a href="">Képzés, vizsgák</a></div>
+		<div class="menuitem "><a href="">Dokumentumtár</a></div>
+		<div class="menuitem "><a href="">Projektek</a></div>
 		<div class="menuitem"><a href="">Tanáraink</a></div>
 		<div class="menuitem"><a href="">Alapítvány</a></div>
 		<div class="menuitem"><a href="">Fenntartó</a></div>
