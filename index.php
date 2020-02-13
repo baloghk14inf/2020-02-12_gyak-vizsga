@@ -1,3 +1,13 @@
+<?php 
+  include_once("include/mysql.php");
+
+  if (isset($_GET['page'])) 
+    $page = $_GET['page']; 
+  else 
+    $page = "iskola"; 
+?>
+
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -20,6 +30,7 @@
 	</div>
 	<div style="clear:both;"></div>
 	<div id="menu">
+		<!--
 		<div class="menuitem "><a href="">Iskolánkról</a></div>
 		<div class="menuitem "><a href="">Beiskolázás</a></div>
 		<div class="menuitem "><a href="">Képzés, vizsgák</a></div>
@@ -27,13 +38,33 @@
 		<div class="menuitem "><a href="">Projektek</a></div>
 		<div class="menuitem"><a href="">Tanáraink</a></div>
 		<div class="menuitem"><a href="">Alapítvány</a></div>
-		<div class="menuitem"><a href="">Fenntartó</a></div>
+		<div class="menuitem"><a href="">Fenntartó</a></div>-->
+
+		<?php include_once("include/main.php"); ?>
+		<div class="menuitem">
+
+		<?php foreach($pages as $page_id => $page_title) { ?>
+        <a <?=($page == $page_id) ? 'class="activemenu"' : '' ?> 
+                href="index.php?page=<?=$page_id ?>"><?=$page_title?></a>
+        <?php } ?>
+
+
+		</div>
+
+		
+    
 		<div style="clear:both;"></div>
 	</div>
 
 	<div class="main">
 
-
+	<?php
+	if(file_exists("include/" . $page . ".php")) {
+		include_once("include/" . $page . ".php");
+	} else {
+		include_once("include/404.php");
+	}
+	?>
 
 	</div>
 

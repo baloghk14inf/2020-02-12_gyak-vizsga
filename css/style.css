@@ -40,7 +40,8 @@ body {
 #suli{
 	width:260px;
 	height:128px;
-	
+	float: right;
+	margin-right: 7px;
 
 	
 	
@@ -81,11 +82,15 @@ body {
 	background-image: url("/images/menu-lime.gif")
 }
 .menuitem a.activemenu{
-	
+	background-image: url("/images/menu-lime.gif");
 }
 
 .main{
 	width:980px;
+	background-color:  white;
+	border: 2px solid #E98300;
+	border-radius: 8px 5px;
+	margin: 20px;
 
 }
 
@@ -118,4 +123,19 @@ body {
 	border: 2px solid #E98300;
 	border-radius: 8px 5px;
 
+}
+
+table {
+
+	
+	margin: 20px;
+	border-collapse: collapse;
+	
+
+}
+tr,td {
+
+	border: 1px solid #E98300;
+	margin: 0;
+	padding: 5px;
 }

@@ -1,20 +1,24 @@
 <?php
- $res = mysql_query(" ");
-
-
-echo'<table>';
-		echo'<tr>';
-			echo'<td><b>Név</b></td>';
-			echo'<td><b>Tárgy</b></td>';
-			echo'<td><b>E-Mail</b></td>';
-		echo'</tr>';
-		while($row = mysql_fetch_array($res))
-		{
-			echo'<tr>';
-				echo'<td>'..'</td>';
-				echo'<td>'..'</td>';
-				echo'<td>'..'</td>';
-			echo'</tr>';
-		}
-echo'</table>';
+ $res = $mysqli -> query("SELECT DISTINCT t.nev tnev, ta.nev tanev, t.email email, t.besorolas besorolas 
+ FROM tanar t,targy ta, kapocs k WHERE t.besorolas = 'Pedagógus II.' 
+ && k.tanar_id = t.id && k.targy_id = ta.id");
 ?>
+
+<table>
+	<tr>
+		<td><b>Név</b></td>
+		<td><b>Tárgy</b></td>
+		<td><b>E-Mail</b></td>
+		<td><b>Besorolás</b></td>
+	</tr>
+		<?php
+		while($row = $res -> fetch_array()):?>
+	<tr>
+		<td><?=$row['tnev']?></td>
+		<td><?=$row['tanev']?></td>
+		<td><?=$row['email']?></td>
+		<td><?=$row['besorolas']?></td>
+	</tr>
+
+		<?php endwhile;?>
+</table>
